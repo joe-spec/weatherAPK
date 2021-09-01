@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./fawesome/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="header text-center py-3">
+        <h3 class="mt-3"><span class="fas fa-sun"></span> WEATHER FORECAST</h3>
+    </div>
+
+    <div class="weather">
+        <div id="particles-js"></div>
+            <div class="row">
+                <div class="col-7">
+                    <div class="weather-inner">
+                        <h2 class="display-4" id="typed"></h2>
+                    </div>
+                </div>
+                <div class="col-5 clip">
+                </div>
+            </div>
+    </div>
+    <a href="./weather.html"><button class="btn weather-btn">Weather Dashboard</button></a>
+
+    <div class="footer pt-4 text-center">
+        <p>&copy Weather Forecast 2021</p>
+    </div>
+
+
+    <script src="./bootstrap/js/jquery_3.3.1.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/typed.js"></script> 
+    <script src="./particles.js-master/particles.js"></script>
+    <script src="./particles.js-master/demo/js/app.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: [
+                '<i class="fas fa-sun"> </i> Welcome to our Web <br> App...',
+                'Designed by Group members with',
+                'Registration Number',
+                'FPTB/CS/18/128706',
+                'FPTB/CS/ND/18/128587',
+                'FPTB/CS/ND/18/125697',
+                'FPTB/CS/ND/18/126655',
+                'School of Science & Technology',
+                'Department of Computer Science',
+                'The Federal Polytechnic Bauchi',
+                'Supervised by',
+                'Mallam Zaharadeen',
+                '<i class ="fas fa-laptop"></i> Nerd Programmers',
+            
+            ],
+            typeSpeed: 120,
+            backSpeed: 50,
+            smartBackspace: true,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>

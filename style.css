@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.header{
+    background: black;
+    color: white;
+    height: 15vh;
+}
+.weather{
+    height: 75vh;
+    overflow: hidden;
+}
+.weather-inner{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 80%;
+    position: absolute;
+    margin: 20vh 0px 0px 10vw;
+}
+.weather-inner h2{
+    font-weight: bolder;
+    font-family: fantasy;
+    height: 50vh;
+}
+@media(max-width: 500px){
+    .weather-inner h2{
+        font-weight: lighter;
+        font-family: fantasy;
+        height: 50vh;
+        font-size: 40px;
+    }
+}
+#particles-js{
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+.clip{
+    position: relative;
+    background: lightskyblue;
+    height: 75vh;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.weather-btn{
+    position: absolute;
+    bottom: 20vh;
+    left: 10vw;
+    color: white;
+    background: lightskyblue;
+    outline: none;
+    z-index: 1000;
+}
+.weather-btn:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+.footer{
+    background: black;
+    padding: 5px;
+    color: white;
+    height: 10vh
+}
+
+main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* background: red; */
+}
+main header h1{
+    font-size: 80px;
+    font-weight: lighter;
+    color: black;
+}
+@media(max-width: 500px){
+    main header h1{
+        font-size: 40px;
+        font-weight: lighter;
+    }
+}
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+@keyframes float{
+    0%{
+        transform: translateX(-20%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-20%);
+    }
+}
+
+.inputform{
+    width: 100%;
+}
+.search-btn{
+    color: white;
+    background: black;
+    outline: none;
+    width: 20%;
+    float: right;
+    margin-right: 13%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+.hr{
+    clear:both;
+}
+@media(max-width: 500px){
+    .search-btn{
+        color: white;
+        background: black;
+        outline: none;
+        width: 100%;
+        float: none;
+        margin-right: 0%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+    }
+}
+.search-btn p{
+    padding: 0;
+    margin: 0;
+}
+.search-btn:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.form-group p{
+    color: black;
+    font-weight: bold;
+}
+
+.curtain{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.curtain1{
+    height: 100vh;
+    width: 50%;
+    background: rgb(0, 0, 0);
+    transition: 3s;
+    z-index: 1;
+}
+.curtain2{
+    height: 100vh;
+    width: 50%;
+    transition: 3s;
+    background: rgb(0, 0, 0);
+    z-index: 1;
+}
